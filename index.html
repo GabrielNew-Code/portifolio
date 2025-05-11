@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/midia/site/icon.svg" />
+    <title>Silveira Programador</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="./assets/midia/site/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="/" class="active">Início</a></li>
+                    <li><a href="./sobre/">Sobre Nós</a></li>
+                    <li><a href="./projetos/">Projetos</a></li>
+                    <li><a href="./contato/">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="/" class="active">Início</a></li>
+            <li><a href="./sobre/">Sobre Nós</a></li>
+            <li><a href="./projetos/">Projetos</a></li>
+            <li><a href="./contato/">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Imagem Hero Section -->
+    <!-- <section class="hero" style="background-image: url('./assets/midia/projetos/construtora.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <div class="hero-text">
+        <h2 data-aos="fade-up">Bem-Vindo!</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Esse é meu protifolio, aqui divulgarei tudo que fizer e aprender.</p>
+        </div>
+        <div class="hero-image">
+        <img src="./assets/midia/sem-img.jpg" alt="Minha foto">
+        </div>
+    </div>
+    </section> -->
+
+    <!-- Video Hero Section -->
+    <section class="hero">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="./assets/midia/inicio/background.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <div class="hero-text">
+        <!-- <h2 data-aos="fade-up">Olá, eu sou Gabriel!</h2> -->
+        <h2 data-aos="fade-up">Olá, eu sou um desenvolvedor em formação!</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Sou estudante de Ciência da Computação e, neste portfólio, compartilho meus primeiros projetos e aprendizados na programação. Estou sempre em busca de novos desafios e oportunidades para crescer na área de tecnologia.</p>
+        </div>
+        <!-- <div class="hero-image">
+        <img src="./assets/midia/sem-img.jpg" alt="Minha foto">
+        </div> -->
+    </div>
+    </section>
+
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-aos="fade-up">Projetos em Destaque</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Conheça alguns dos nossos trabalhos mais recentes</p>
+            </div>
+            <!-- Modificar os cards de projeto na página inicial -->
+            <div class="projects-grid">
+                <a href="./projetos/" class="project-card" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="./assets/midia/projetos/construtora.png" alt="Projeto Residencial">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Site Institucional</h3>
+                                <p>Construtora</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./projetos/" class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img">
+                        <img src="./assets/midia/projetos/jf-transportes.png" alt="Projeto Comercial">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Site Institucional</h3>
+                                <p>JF Transportes</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./projetos/" class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img">
+                        <img src="./assets/midia/sem-img.jpg" alt="Projeto Industrial">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Portfólio</h3>
+                                <p>Silveira - Dev</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center mt-40">
+                <a href="./projetos/" class="btn btn-primary">Ver Todos os Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- <h2>Silveira</h2> -->
+                    <img src="./assets/midia/site/logo.svg">
+                    <p>Excelência em Desenvolvimento Web</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Alfenas - MG</p>
+                    <p><i class="fas fa-phone"></i> (35) 0000-0000</p>
+                    <p><i class="fas fa-envelope"></i> contato@silveira.com.br</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Silveira Dev. – Todos os direitos reservados.</p>
+                <p><a href="./" target="_blank">Site desenvolvido por Silveira Dev.</a></p>
+                <p><a href="./politica-de-privacidade/">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+@import url(./styles.css);
+@import url(./global.css);
+
+/* Projetos Destaque */
+
+/* ===== FEATURED PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  background-color: var(--color-dark-2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Make project cards clickable */
+a.project-card {
+  text-decoration: none;
+  color: var(--color-white);
+  display: block;
+}
+
+a.project-card:hover .project-info h3 {
+  color: var(--color-white);
+}
+
+/* Modificar o estilo dos cards de projeto para mostrar o nome por padrão */
+.project-img {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* Aumentado de 250px para 300px */
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Altura limitada para mostrar apenas na parte inferior */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+/* Mostrar apenas o título do projeto por padrão */
+.project-info {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.4s ease;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  bottom: -35px; /* Posiciona o texto mais abaixo */
+}
+
+.project-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: var(--color-white);
+  transition: all 0.4s ease;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: var(--color-gray-light);
+  margin-top: 2px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+/* Efeito hover para os cards de projeto */
+.project-card:hover .project-overlay {
+  height: 120px; /* Aumenta a altura do degrade ao passar o mouse */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.project-card:hover .project-info {
+  transform: translateY(-10px);
+}
+
+.project-card:hover .project-info h3 {
+  font-size: 20px; /* Aumenta apenas 2px */
+  margin-bottom: 2px;
+  color: var(--color-white); /* Mantém a cor branca */
+}
+
+.project-card:hover .project-info p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px; /* igual ou maior que a altura total do header */
+}
+
+/* .hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  color: white;
+  padding: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+  text-shadow: 8px 0px 20px rgba(0, 0, 0, 0.9); /* sombra mais para cima */
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: white;
+  text-shadow: 6px -3px 15px rgb(0, 0, 0); /* sombra mais para cima */
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+} */
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(10%); /* move para baixo 5% */
+  z-index: 2;
+}

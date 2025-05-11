@@ -1,0 +1,270 @@
+@import url(./styles.css);
+@import url(./global.css);
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  height: 300px;
+  background-color: var(--color-dark-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.page-header p {
+  font-size: 20px;
+  color: var(--color-gray-light);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+
+
+/* ===== PROJECTS FILTER ===== */
+.projects-filter {
+  padding-bottom: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: var(--color-dark-2);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-royal-blue);
+}
+
+/* Barra de pesquisa e filtros */
+.search-filter-container {
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  background-color: var(--color-dark-3);
+  border: 1px solid var(--color-gray);
+  border-radius: 4px 0 0 4px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-royal-blue);
+}
+
+.search-btn {
+  padding: 12px 20px;
+  background-color: var(--color-royal-blue);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.search-btn:hover {
+  background-color: var(--color-royal-blue-dark);
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.filter-tag {
+  padding: 8px 15px;
+  background-color: var(--color-dark-3);
+  color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 14px;
+}
+
+.filter-tag:hover,
+.filter-tag.active {
+  background-color: var(--color-royal-blue);
+  border-color: var(--color-royal-blue);
+}
+
+
+
+
+
+
+
+
+
+/* ===== FEATURED PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  background-color: var(--color-dark-2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Make project cards clickable */
+a.project-card {
+  text-decoration: none;
+  color: var(--color-white);
+  display: block;
+}
+
+a.project-card:hover .project-info h3 {
+  color: var(--color-white);
+}
+
+/* Modificar o estilo dos cards de projeto para mostrar o nome por padrão */
+.project-img {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* Aumentado de 250px para 300px */
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Altura limitada para mostrar apenas na parte inferior */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+/* Mostrar apenas o título do projeto por padrão */
+.project-info {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.4s ease;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  bottom: -35px; /* Posiciona o texto mais abaixo */
+}
+
+.project-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: var(--color-white);
+  transition: all 0.4s ease;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: var(--color-gray-light);
+  margin-top: 2px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+/* Efeito hover para os cards de projeto */
+.project-card:hover .project-overlay {
+  height: 120px; /* Aumenta a altura do degrade ao passar o mouse */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.project-card:hover .project-info {
+  transform: translateY(-10px);
+}
+
+.project-card:hover .project-info h3 {
+  font-size: 20px; /* Aumenta apenas 2px */
+  margin-bottom: 2px;
+  color: var(--color-white); /* Mantém a cor branca */
+}
+
+.project-card:hover .project-info p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

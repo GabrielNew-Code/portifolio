@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/midia/site/logo-icon.png" />
+    <title>Contato | Dev Silveira</title>
+    <link rel="stylesheet" href="../assets/css/contato.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../">
+                    <img src="../assets/midia/site/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../">Início</a></li>
+                    <li><a href="../sobre/">Sobre Nós</a></li>
+                    <li><a href="../projetos/">Projetos</a></li>
+                    <li><a href="../contato/" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="../">Início</a></li>
+            <li><a href="../sobre/">Sobre Nós</a></li>
+            <li><a href="../projetos/">Projetos</a></li>
+            <li><a href="../contato/" class="active">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Header -->                                                   <!-- 1600 x 800 -->
+    <section class="contact-header" style="background-image: url('../assets/midia/contato/background.jpg');">
+        <div class="container">
+            <div class="contact-header-content">
+                <h1 data-aos="fade-up">Entre em Contato</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Estamos prontos para atender você e transformar seus sonhos em realidade</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container" data-aos="fade-up">
+                    <!-- <h2>Envie sua Mensagem</h2> -->
+                    <form id="contactForm" class="contact-form">
+                        <h2>Envie sua Mensagem</h2>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="form-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="form-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="form-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="form-feedback"></div>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">Enviar Mensagem</button> -->
+                        <button type="submit" class="btn btn-primary" style="display: block; margin: 0 auto;">Enviar Mensagem</button>
+
+                    </form>
+                </div>
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Informações de Contato</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Endereço</h3>
+                            <p>Av. Paulista, 1000 - Bela Vista</p>
+                            <p>São Paulo, SP - CEP 01310-100</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Telefone</h3>
+                            <p>(11) 5555-5555</p>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>E-mail</h3>
+                            <p>contato@construtora.com.br</p>
+                            <p>comercial@construtora.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                            <p>Sábado: 9h às 13h</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container" data-aos="fade-up">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0976951333906!2d-46.65390548502406!3d-23.563273284682373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1628180394942!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118849.68142701854!2d-46.04377306943665!3d-21.42717958662655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b5f433c6140beb%3A0xbc2ca390b524e1!2sAlfenas%2C%20MG%2C%2037130-000!5e0!3m2!1spt-BR!2sbr!4v1746913058956!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14739.212707610066!2d-45.947!3d-21.4255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b5f433c6140beb%3A0xbc2ca390b524e1!2sAlfenas%2C%20MG%2C%2037130-000!5e0!3m2!1spt-BR!2sbr!4v1746913058956!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- <h2>Silveira</h2> -->
+                    <img src="../assets/midia/site/logo.svg">
+                    <p>Excelência em Desenvolvimento Web</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Alfenas - MG</p>
+                    <p><i class="fas fa-phone"></i> (35) 0000-0000</p>
+                    <p><i class="fas fa-envelope"></i> contato@silveira.com.br</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Silveira Dev. – Todos os direitos reservados.</p>
+                <p><a href="https://seuportifolio.com" target="_blank">Site desenvolvido por GBR SILVEIRA</a></p>
+                <p><a href="../politica-de-privacidade/">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/contact.js"></script>
+</body>
+</html>
